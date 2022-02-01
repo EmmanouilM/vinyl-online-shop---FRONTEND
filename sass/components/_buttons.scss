@@ -1,0 +1,68 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5rem;
+  padding: 0.9rem 3rem;
+  &:hover {
+    background: $blue-800;
+  }
+
+  &--default {
+    @extend .btn;
+
+    background: $blue-700;
+  }
+  &--info,
+  &--order {
+    @extend .btn;
+    background: transparent;
+
+    &::before {
+      content: "show more";
+    }
+  }
+
+  &--sign {
+    @extend .btn;
+    background: $blue-800;
+  }
+
+  &--info {
+    visibility: hidden;
+    border: 2px solid $blue-100;
+    &:hover {
+      background: $blue-500;
+    }
+  }
+
+  &--order {
+    border: 2px solid $blue-700;
+  }
+
+  &--default,
+  &--order {
+    margin-top: $margin-200;
+  }
+  &--read {
+    @extend .btn;
+    background: $sandy-500;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.arrow-btn,
+.arrow-btn-2 {
+  @include arrow-btn;
+}
+
+.arrow-btn-2 {
+  background-color: transparent;
+  display: inline-block;
+  margin-right: $margin-100;
+
+  &:first-of-type {
+    margin-right: $margin-100;
+  }
+}
