@@ -1,0 +1,85 @@
+.header {
+  &__top {
+    padding: 0 9vw;
+    @include flex-space-between;
+    height: 10vh;
+  }
+  &__search-form {
+    width: 50rem;
+    height: 3rem;
+    border: $border;
+    overflow: hidden;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    & input {
+      padding: 1.2rem;
+      height: 100%;
+      width: 100%;
+      text-transform: none;
+      background: transparent;
+    }
+    & label {
+      padding: 0 1.2rem;
+      cursor: pointer;
+      &:hover {
+        color: $blue-800;
+      }
+    }
+  }
+
+  &__icons div,
+  &__icons a {
+    margin-left: $margin-200;
+    cursor: pointer;
+  }
+
+  &__bottom {
+    height: 7vh;
+    background-color: $blue-700;
+    &__active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+  }
+
+  &__navbar {
+    @include flex;
+    height: 100%;
+    & div {
+      @include flex;
+      height: 100%;
+      &:hover {
+        background: $blue-800;
+      }
+    }
+    & a {
+      display: inline-block;
+      padding: 0 3rem;
+    }
+  }
+}
+
+#header__search-btn {
+  display: none;
+}
+
+.bottom-navbar {
+  background: $blue-700;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: none;
+  & a {
+    padding: $margin-200;
+    &:hover {
+      background: $blue-800;
+    }
+  }
+}
