@@ -4,6 +4,28 @@
 /* margin/padding variables  */
 /* transition variables  */
 @import url("https://fonts.googleapis.com/css2?family=Chango&family=Montserrat:wght@100;300;400;500;600;700;900&display=swap");
+@keyframes ellipseRotate {
+  0% {
+    transform: rotate(-45deg); }
+  100% {
+    transform: rotate(-405deg); } }
+
+@keyframes iconsVisible {
+  0% {
+    visibility: hidden;
+    transform: translateY(-10px); }
+  100% {
+    visibility: visible;
+    transform: translateY(0); } }
+
+@keyframes buttonVisible {
+  0% {
+    visibility: hidden;
+    transform: translateY(10px); }
+  100% {
+    visibility: visible;
+    transform: translateY(0); } }
+
 * {
   margin: 0;
   padding: 0;

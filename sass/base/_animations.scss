@@ -1,0 +1,33 @@
+@keyframes ellipseRotate {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(-405deg);
+  }
+}
+@keyframes iconsVisible {
+  0% {
+    visibility: hidden;
+
+    transform: translateY(-10px);
+  }
+
+  100% {
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@keyframes buttonVisible {
+  0% {
+    visibility: hidden;
+
+    transform: translateY(10px);
+  }
+
+  100% {
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
