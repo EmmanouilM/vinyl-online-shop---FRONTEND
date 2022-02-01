@@ -1,0 +1,106 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start !important;
+}
+
+@mixin flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin arrow-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid $blue-700;
+  cursor: pointer;
+  padding-top: 0.5rem;
+}
+
+@mixin figure {
+  overflow: hidden;
+  border-radius: 0.3rem;
+  position: relative;
+  & img {
+    width: 100%;
+  }
+  & figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba($blue-800, 0.8);
+    width: 100%;
+    & h3 {
+      color: $blue-100;
+      padding: 1rem 2rem;
+    }
+  }
+}
+@mixin icons-appear-animation {
+  background-color: $blue-100;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  & .hidden__info {
+    position: absolute;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    &:hover {
+      background-color: rgba($blue-900, 0.6);
+      .set-icons {
+        animation: iconsVisible 0.6s ease-out;
+        animation-fill-mode: forwards;
+      }
+      .btn--info {
+        animation: buttonVisible 0.6s ease-out;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+  .set-icons {
+    visibility: hidden;
+    width: 100%;
+    text-align: end;
+
+    & a {
+      padding: 1rem;
+    }
+  }
+}
+@mixin background-animation {
+  margin-bottom: $margin-200;
+  padding: 1rem;
+  background: $blue-900;
+  transition: $transition;
+  border-radius: 0.3rem;
+  &:hover {
+    background: $blue-500;
+  }
+}
+
+@mixin image-animation {
+  transition: $transition;
+  &:hover {
+    transform: scale(1.03, 1.03);
+    -webkit-filter: blur(0.5px); /* Safari 6.0 - 9.0 */
+    filter: blur(0.5px);
+  }
+}
