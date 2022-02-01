@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  transition: $transition;
+  transition: width none;
+
+  &,
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 3rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: $blue-200;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: $blue-500;
+}
+
+body {
+  background: $blue-100;
+}
