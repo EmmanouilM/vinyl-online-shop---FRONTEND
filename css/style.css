@@ -3,6 +3,7 @@
 /* border variables  */
 /* margin/padding variables  */
 /* transition variables  */
+@import url("https://fonts.googleapis.com/css2?family=Chango&family=Montserrat:wght@100;300;400;500;600;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -31,3 +32,250 @@ html::-webkit-scrollbar-thumb {
 
 body {
   background: #f1f6f9; }
+
+* {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #1e3948; }
+
+h1 {
+  font-size: 3.7rem; }
+
+h2 {
+  font-size: 2.8rem;
+  color: #f1f6f9; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1.5rem; }
+
+p {
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 2rem;
+  font-weight: 500; }
+
+a,
+i {
+  font-size: 1.5rem; }
+
+.set-icons a {
+  background-color: transparent;
+  color: #f1f6f9; }
+  .set-icons a:hover {
+    color: #6fa4c3; }
+
+.heading {
+  color: #1e3948;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+  .heading::before {
+    content: attr(data-text);
+    color: transparent;
+    -webkit-text-stroke: 2px #46b612;
+    text-transform: uppercase; }
+
+.btn {
+  font-size: 1.2rem;
+  font-weight: 500; }
+  .btn--default, .btn--info, .btn--read {
+    color: #f1f6f9; }
+  .btn--order {
+    color: #427c9e; }
+
+.header__logo {
+  font-size: 2.8rem;
+  font-family: "Chango", cursive;
+  font-weight: bolder;
+  color: #d31306; }
+  .header__logo i {
+    color: #1e3948;
+    font-size: 1.2rem; }
+
+.header__search-form input {
+  text-transform: none;
+  font-size: 1.2rem; }
+
+.header__search-form label {
+  font-size: 1.5rem;
+  color: #427c9e; }
+  .header__search-form label :hover {
+    color: #1e3948; }
+
+.header__icons div,
+.header__icons a {
+  font-size: 2rem;
+  color: #427c9e; }
+  .header__icons div:hover,
+  .header__icons a:hover {
+    color: #1e3948; }
+
+.home__title {
+  font-family: "Chango", cursive;
+  font-size: 12rem;
+  color: #d31306;
+  -webkit-text-stroke: 1px #f1f6f9;
+  letter-spacing: -9px;
+  text-shadow: 0px 2px 3px #5c0606; }
+  .home__title::before {
+    content: "Vinyllia.";
+    font-family: "Chango", cursive;
+    font-size: inherit;
+    color: transparent;
+    position: absolute;
+    z-index: -2000;
+    -webkit-text-stroke: 24px #ec9d53; }
+
+.slider__item--title {
+  color: #1e3948;
+  font-weight: bold;
+  cursor: pointer; }
+  .slider__item--title:hover {
+    color: #6fa4c3;
+    text-decoration: underline; }
+
+.slider__item > p {
+  color: #1e3948;
+  text-align: right; }
+
+.trending-section ul:first-of-type div a {
+  color: #1e3948; }
+  .trending-section ul:first-of-type div a:hover {
+    color: #12222b; }
+
+.newsletter form .box {
+  color: #1e3948;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  text-transform: none; }
+
+.newsletter form input:last-of-type {
+  color: #f1f6f9;
+  font-size: 1.2rem; }
+
+.vinyl-round-section .text h4 {
+  text-transform: uppercase;
+  color: #427c9e; }
+  .vinyl-round-section .text h4::before {
+    display: inline-block;
+    content: "";
+    border: 1px solid #6fa4c3;
+    width: 80px;
+    margin: 0 10px 0 0;
+    transform: translateY(-4px); }
+
+.vinyl-round-section .text div {
+  line-height: 8rem; }
+  .vinyl-round-section .text div span {
+    color: #12222b;
+    font-size: 12rem;
+    font-weight: bold;
+    letter-spacing: -2px; }
+
+.vinyl-round-section figure figcaption .pages {
+  font-size: 1.5rem;
+  font-weight: 600; }
+  .vinyl-round-section figure figcaption .pages span {
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #427c9e; }
+
+.boxind-day-section h1 {
+  font-size: 6rem;
+  color: #f1f6f9; }
+
+.boxind-day-section p {
+  text-align: right; }
+  .boxind-day-section p:last-of-type {
+    text-decoration: line-through;
+    color: #d31306; }
+
+.footer .container h3,
+.footer .container .box a,
+.footer .container i {
+  color: #427c9e; }
+
+.footer .container .aside form a i {
+  color: #f1f6f9;
+  font-size: 1.5rem; }
+
+.footer .container .aside .tooltip {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #f1f6f9;
+  text-transform: uppercase; }
+
+.footer .copyright a {
+  font-size: 1.2rem;
+  color: #1e3948; }
+  .footer .copyright a:hover {
+    text-decoration: underline; }
+
+.footer .copyright span {
+  font-size: 1rem; }
+
+.header__navbar a,
+.info__content i,
+.info__text h3,
+.info__text p,
+.bottom-navbar a,
+.left-label h4,
+.newsletter form h3 {
+  color: #f1f6f9; }
+
+.label-new {
+  color: #1e3948;
+  font-size: 2.8rem;
+  letter-spacing: -1px;
+  -webkit-text-stroke: 4px #1e3948; }
+  .label-new::before {
+    content: "New";
+    font-size: inherit;
+    color: #f1f6f9;
+    -webkit-text-stroke: 2px #f1f6f9; }
+
+.arrows li {
+  font-size: 1.5rem;
+  color: #427c9e; }
+
+.login-form-container form h3 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #f1f6f9; }
+
+.login-form-container form span {
+  font-size: 1.5rem;
+  color: #f1f6f9; }
+
+.login-form-container form .box {
+  font-size: 1.2rem;
+  color: #f1f6f9;
+  text-transform: none;
+  background-color: #1e3948; }
+  .login-form-container form .box::placeholder {
+    color: #6fa4c3; }
+
+.login-form-container form .checkbox label {
+  font-size: 1.5rem;
+  color: #ec9d53;
+  cursor: pointer; }
+
+.login-form-container form .btn--sign {
+  color: #ec9d53; }
+
+.login-form-container form p {
+  color: #ec9d53;
+  font-size: 1.2rem; }
+  .login-form-container form p a {
+    color: #f1f6f9;
+    font-size: 1.2rem;
+    text-decoration: underline; }
+
+.login-form-container #close-login-btn {
+  font-size: 2.8rem;
+  color: #12222b;
+  cursor: pointer; }

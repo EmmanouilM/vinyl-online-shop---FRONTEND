@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Chango&family=Montserrat:wght@100;300;400;500;600;700;900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: $blue-800;
+}
+
+h1 {
+  font-size: $font-size-500;
+}
+h2 {
+  font-size: $font-size-400;
+  color: $blue-100;
+}
+h3 {
+  font-size: $font-size-300;
+}
+h4 {
+  font-size: $font-size-200;
+}
+p {
+  font-size: $font-size-100;
+  text-align: justify;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+a,
+i {
+  font-size: $font-size-200;
+}
+.set-icons {
+  & a {
+    background-color: transparent;
+    color: $blue-100;
+    &:hover {
+      color: $blue-500;
+    }
+  }
+}
+
+.heading {
+  color: $blue-800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  &::before {
+    content: attr(data-text);
+    color: transparent;
+    -webkit-text-stroke: 2px $green-500;
+    text-transform: uppercase;
+  }
+}
+
+.btn {
+  font-size: $font-size-100;
+  font-weight: 500;
+  &--default,
+  &--info,
+  &--read {
+    color: $blue-100;
+  }
+  &--order {
+    color: $blue-700;
+  }
+}
+
+.header {
+  &__logo {
+    font-size: $font-size-400;
+    font-family: "Chango", cursive;
+    font-weight: bolder;
+    color: $red-500;
+
+    & i {
+      color: $blue-800;
+      font-size: $font-size-100;
+    }
+  }
+  &__search-form {
+    & input {
+      text-transform: none;
+      font-size: $font-size-100;
+    }
+    & label {
+      font-size: $font-size-200;
+      color: $blue-700;
+      & :hover {
+        color: $blue-800;
+      }
+    }
+  }
+  &__icons div,
+  &__icons a {
+    font-size: $font-size-300;
+    color: $blue-700;
+    &:hover {
+      color: $blue-800;
+    }
+  }
+}
+
+.home {
+  &__title {
+    font-family: "Chango", cursive;
+    font-size: $font-size-900;
+    color: $red-500;
+    -webkit-text-stroke: 1px $blue-100;
+    letter-spacing: -9px;
+    text-shadow: 0px 2px 3px rgb(92, 6, 6);
+    &::before {
+      content: "Vinyllia.";
+      font-family: "Chango", cursive;
+      font-size: inherit;
+      color: transparent;
+      position: absolute;
+      z-index: -2000;
+      -webkit-text-stroke: 24px $sandy-500;
+    }
+  }
+}
+
+.slider {
+  &__item {
+    &--title {
+      color: $blue-800;
+      font-weight: bold;
+      cursor: pointer;
+      &:hover {
+        color: $blue-500;
+        text-decoration: underline;
+      }
+    }
+    & > p {
+      color: $blue-800;
+      text-align: right;
+    }
+  }
+}
+
+.trending-section ul:first-of-type {
+  & div {
+    & a {
+      color: $blue-800;
+      &:hover {
+        color: $blue-900;
+      }
+    }
+  }
+}
+
+.newsletter form {
+  & .box {
+    color: $blue-800;
+    font-weight: bolder;
+    font-size: $font-size-200;
+    text-transform: none;
+  }
+  & input:last-of-type {
+    color: $blue-100;
+    font-size: $font-size-100;
+  }
+}
+
+.vinyl-round-section {
+  & .text {
+    & h4 {
+      text-transform: uppercase;
+      color: $blue-700;
+      &::before {
+        display: inline-block;
+        content: "";
+        border: 1px solid $blue-500;
+        width: 80px;
+        margin: 0 10px 0 0;
+        transform: translateY(-4px);
+      }
+    }
+    & div {
+      line-height: 8rem;
+      span {
+        color: $blue-900;
+        font-size: $font-size-900;
+        font-weight: bold;
+        letter-spacing: -2px;
+      }
+    }
+  }
+
+  & figure figcaption .pages {
+    font-size: $font-size-200;
+    font-weight: 600;
+    & span {
+      font-weight: 700;
+      font-size: $font-size-400;
+      color: $blue-700;
+    }
+  }
+}
+
+.boxind-day-section {
+  h1 {
+    font-size: $font-size-700;
+    color: $blue-100;
+  }
+  p {
+    text-align: right;
+    &:last-of-type {
+      text-decoration: line-through;
+      color: $red-500;
+    }
+  }
+}
+
+.footer {
+  .container {
+    & h3,
+    & .box a,
+    i {
+      color: $blue-700;
+    }
+    & .aside {
+      & form a i {
+        color: $blue-100;
+        font-size: $font-size-200;
+      }
+      & .tooltip {
+        font-size: $font-size;
+        letter-spacing: 2px;
+        font-weight: bold;
+        color: $blue-100;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .copyright {
+    & a {
+      font-size: $font-size-100;
+      color: $blue-800;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    & span {
+      font-size: $font-size;
+    }
+  }
+}
+
+.header__navbar a,
+.info__content i,
+.info__text h3,
+.info__text p,
+.bottom-navbar a,
+.left-label h4,
+.newsletter form h3 {
+  color: $blue-100;
+}
+
+.label-new {
+  color: $blue-800;
+  font-size: $font-size-400;
+  letter-spacing: -1px;
+  -webkit-text-stroke: 4px $blue-800;
+  &::before {
+    content: "New";
+    font-size: inherit;
+    color: $blue-100;
+    -webkit-text-stroke: 2px $blue-100;
+  }
+}
+
+.arrows li {
+  font-size: $font-size-200;
+  color: $blue-700;
+}
+
+.login-form-container {
+  & form {
+    & h3 {
+      text-transform: uppercase;
+      text-align: center;
+      color: $blue-100;
+    }
+    & span {
+      font-size: $font-size-200;
+      color: $blue-100;
+    }
+    & .box {
+      font-size: $font-size-100;
+      color: $blue-100;
+      text-transform: none;
+
+      background-color: $blue-800;
+      &::placeholder {
+        color: $blue-500;
+      }
+    }
+    & .checkbox {
+      & label {
+        font-size: $font-size-200;
+        color: $sandy-500;
+        cursor: pointer;
+      }
+    }
+    & .btn--sign {
+      color: $sandy-500;
+    }
+
+    & p {
+      color: $sandy-500;
+      font-size: $font-size-100;
+      & a {
+        color: $blue-100;
+        font-size: $font-size-100;
+        text-decoration: underline;
+      }
+    }
+  }
+  & #close-login-btn {
+    font-size: $font-size-400;
+    color: $blue-900;
+    cursor: pointer;
+  }
+}
