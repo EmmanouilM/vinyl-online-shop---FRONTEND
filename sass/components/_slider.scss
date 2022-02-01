@@ -1,0 +1,56 @@
+.slider {
+  &__container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    @include flex-start;
+    background-color: $blue-500;
+    border-radius: 0.2rem;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+  }
+  &__content {
+    @include flex-start;
+    position: relative;
+    padding: $margin-200 0;
+  }
+  &__item {
+    width: calc(82vw / 4);
+    padding: $margin-100;
+    display: flex;
+    flex-direction: column;
+    background-color: $blue-100;
+    box-shadow: $box-shadow;
+    border-right: $margin-100 solid $blue-500;
+    & figure {
+      @include icons-appear-animation;
+    }
+    &--title {
+      margin-top: $margin-200;
+    }
+    & > p {
+      margin-bottom: $margin-200;
+    }
+  }
+
+  &__control > button {
+    position: absolute;
+    box-shadow: $box-shadow;
+    outline: none;
+    transform: translateY(-50%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: $transition;
+    &.show {
+      transform: translateY(-50%) scale(1);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__next {
+    right: 0.5rem;
+  }
+  &__prev {
+    left: 0.5rem;
+  }
+}

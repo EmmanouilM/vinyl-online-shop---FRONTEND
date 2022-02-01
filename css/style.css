@@ -348,6 +348,90 @@ i {
   .grid--1of4 > .grid-cell:first-of-type {
     flex: 0 0 25%; }
 
+.slider__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start !important;
+  background-color: #6fa4c3;
+  border-radius: 0.2rem;
+  box-shadow: 0px 4px 4px rgba(35, 38, 65, 0.521);
+  overflow: hidden; }
+
+.slider__content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start !important;
+  position: relative;
+  padding: 2rem 0; }
+
+.slider__item {
+  width: calc(82vw / 4);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f6f9;
+  box-shadow: 0px 4px 4px rgba(35, 38, 65, 0.521);
+  border-right: 1rem solid #6fa4c3; }
+  .slider__item figure {
+    background-color: #f1f6f9;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    position: relative; }
+    .slider__item figure:after {
+      content: "";
+      display: block;
+      padding-top: 100%; }
+    .slider__item figure .hidden__info {
+      position: absolute;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%; }
+      .slider__item figure .hidden__info:hover {
+        background-color: rgba(18, 34, 43, 0.6); }
+        .slider__item figure .hidden__info:hover .set-icons {
+          animation: iconsVisible 0.6s ease-out;
+          animation-fill-mode: forwards; }
+        .slider__item figure .hidden__info:hover .btn--info {
+          animation: buttonVisible 0.6s ease-out;
+          animation-fill-mode: forwards; }
+    .slider__item figure .set-icons {
+      visibility: hidden;
+      width: 100%;
+      text-align: end; }
+      .slider__item figure .set-icons a {
+        padding: 1rem; }
+  .slider__item--title {
+    margin-top: 2rem; }
+  .slider__item > p {
+    margin-bottom: 2rem; }
+
+.slider__control > button {
+  position: absolute;
+  box-shadow: 0px 4px 4px rgba(35, 38, 65, 0.521);
+  outline: none;
+  transform: translateY(-50%) scale(0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-out; }
+  .slider__control > button.show {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+    visibility: visible; }
+
+.slider__next {
+  right: 0.5rem; }
+
+.slider__prev {
+  left: 0.5rem; }
+
 .header__top {
   padding: 0 9vw;
   display: flex;
