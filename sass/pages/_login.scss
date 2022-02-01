@@ -1,0 +1,55 @@
+.login-form-container {
+  @include flex;
+  background: #427c9ebe;
+  backdrop-filter: blur(2px);
+  position: fixed;
+  top: 0;
+  right: -105%;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  &.active {
+    right: 0;
+  }
+  & form {
+    background: $blue-900;
+    border: $border;
+    width: 40rem;
+    padding: $margin-200;
+    box-shadow: $box-shadow;
+    border-radius: 0.5rem;
+    margin: $margin-200;
+    & span {
+      display: block;
+      padding-top: $margin-100;
+    }
+    & .box {
+      width: 100%;
+      margin: 0.7rem 0;
+      border: $border;
+      border-radius: 0.5rem;
+      padding: $margin-200;
+      background-color: $blue-800;
+    }
+    & .checkbox {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-top: 1rem;
+    }
+    & .btn--sign {
+      width: 100%;
+      margin: $margin-200 0;
+      border: 1px solid $sandy-500;
+    }
+
+    & p {
+      padding-top: 0.8rem;
+    }
+  }
+  & #close-login-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+  }
+}
