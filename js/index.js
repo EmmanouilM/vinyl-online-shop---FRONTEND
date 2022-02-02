@@ -91,3 +91,11 @@ if (day_month) day_month.innerHTML = d + " " + months[m];
 		copyYear[i].textContent = currentYear;
 	}
 }());
+
+//landing page animation
+TweenMax.to('.vinyl', 12, {rotation:"360", ease:Power0.easeNone, repeat:-1});
+var tl = new TimelineLite({repeat:-1,repeatDelay:3,yoyo:true});
+tl.set('#vinyl-02,#vinyl-03,#vinyl-04',{opacity:0,ease:Power0.easeNone});
+tl.to('#vinyl-02', 1, {opacity: 1,ease:Power0.easeNone},3);
+tl.to('#vinyl-03', 1, {opacity: 1,ease:Power0.easeNone},6);
+tl.to('#vinyl-04', 1, {opacity: 1,ease:Power0.easeNone},9); 
