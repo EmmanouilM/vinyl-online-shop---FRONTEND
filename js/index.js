@@ -72,3 +72,22 @@ window.onload = () => {
 
   }
 })();
+
+// date actions
+//current day 
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var n = new Date();
+var m = n.getMonth();
+var d = n.getDate();
+var day_month = document.getElementById("day-month");
+if (day_month) day_month.innerHTML = d + " " + months[m];
+
+//current date in footer
+(function () {
+	let currentYear = (new Date).getFullYear();
+	let copyYear = document.querySelectorAll('.year');
+	
+	for (let i = 0; i < copyYear.length; i++) {
+		copyYear[i].textContent = currentYear;
+	}
+}());
