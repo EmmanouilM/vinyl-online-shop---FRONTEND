@@ -2,6 +2,7 @@
 
 A complete responsive online vinyl store website design.
 
+
 **FEATURES**
 
 * Built with HTML, SCSS, JS, Google Font,  Font Awesome
@@ -16,9 +17,6 @@ A complete responsive online vinyl store website design.
 * Customized buttons
 * Complete responsive design
 
-**CREDITS**
-
-* Images by [Unsplash](https://unsplash.com/)
 
 **VIEWS**
 
@@ -43,5 +41,8 @@ A complete responsive online vinyl store website design.
 ![view2](/image/screenshots/view2.png "view2")  
 
 
+**CREDITS**
+
+* Images by [Unsplash](https://unsplash.com/)
 
 
