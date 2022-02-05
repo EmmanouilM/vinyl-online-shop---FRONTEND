@@ -20,5 +20,8 @@ A complete responsive online vinyl store website design.
 
 * Images by [Unsplash](https://unsplash.com/)
 
+**VIEWS**
+
+![view2](https://github.com/EmmanouilM/vinyl-online-shop-FRONTEND/blob/master/image/screenshots/view2.pngraw=true)
 
 
