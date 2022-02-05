@@ -40,7 +40,7 @@ A complete responsive online vinyl store website design.
 
 ![view9](/image/screenshots/view9.png "view9")  
 
-![view1](/image/screenshots/view1.png "view1")  
+![view2](/image/screenshots/view2.png "view2")  
 
 
 
